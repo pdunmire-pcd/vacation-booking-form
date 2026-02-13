@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #4a6fa5 0%, #5b7fb8 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,8 +29,8 @@ form {
     background: white;
     border-radius: 16px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    max-width: 900px;
-    width: 90%;
+    max-width: 650px;
+    width: 85%;
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ form {
 .vacation-header {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -63,13 +63,13 @@ form {
 
 .header-overlay h1 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
     margin: 0;
-    padding: 30px;
-    letter-spacing: 2px;
+    padding: 20px;
+    letter-spacing: 1.5px;
 }
 
 /* ===== FORM CONTENT ===== */
@@ -77,8 +77,8 @@ fieldset {
     border: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin: 40px 50px 35px 50px;
+    gap: 25px;
+    margin: 35px 40px 30px 40px;
     padding: 0;
 }
 
@@ -93,17 +93,17 @@ label {
     flex-direction: column;
     font-weight: 700;
     color: #1a1a1a;
-    font-size: 1.1rem;
+    font-size: 1rem;
     gap: 6px;
 }
 
 input[type="date"],
 input[type="number"],
 select {
-    padding: 14px 16px;
+    padding: 12px 14px;
     border: 2px solid #d0d0d0;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: inherit;
     transition: all 0.3s ease;
     background-color: #f9f9f9;
@@ -123,17 +123,17 @@ select {
     appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-size: 20px;
-    padding-right: 45px;
+    background-position: right 12px center;
+    background-size: 18px;
+    padding-right: 40px;
 }
 
 /* ===== ERROR MESSAGES ===== */
 .error-message {
     color: #e74c3c;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    min-height: 20px;
+    min-height: 18px;
     display: block;
 }
 
@@ -141,19 +141,19 @@ select {
 button[type="submit"] {
     display: block;
     width: 100%;
-    max-width: 450px;
-    margin: 0 auto 45px auto;
-    padding: 18px 40px;
+    max-width: 350px;
+    margin: 0 auto 35px auto;
+    padding: 15px 35px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
 }
 
@@ -177,7 +177,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 footer a {
@@ -206,50 +206,50 @@ footer a:hover {
     background: white;
     border-radius: 16px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    padding: 60px 80px;
+    padding: 50px 60px;
     text-align: center;
-    max-width: 600px;
+    max-width: 550px;
     width: 90%;
 }
 
 .thank-you-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 30px;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 55px;
     color: white;
     font-weight: bold;
 }
 
 .thank-you-card h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #1a1a1a;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .thank-you-card p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     line-height: 1.6;
 }
 
 .back-home-button {
     display: inline-block;
-    padding: 16px 40px;
+    padding: 14px 35px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     transition: all 0.3s ease;
     box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
 }
@@ -264,55 +264,18 @@ footer a:hover {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1024px) {
-    form {
-        max-width: 750px;
-    }
-    
-    .vacation-header {
-        height: 280px;
-    }
-    
-    .header-overlay h1 {
-        font-size: 3rem;
-    }
-    
-    label {
-        font-size: 1rem;
-    }
-    
-    input[type="date"],
-    input[type="number"],
-    select {
-        padding: 12px 14px;
-        font-size: 0.95rem;
-    }
-    
-    fieldset {
-        margin: 35px 45px 30px 45px;
-        gap: 25px;
-    }
-    
-    button[type="submit"] {
-        max-width: 400px;
-        margin: 0 auto 40px auto;
-        padding: 16px 35px;
-        font-size: 1.1rem;
-    }
-}
-
 @media (max-width: 768px) {
     form {
         width: 90%;
-        max-width: 600px;
+        max-width: 550px;
     }
     
     .vacation-header {
-        height: 250px;
+        height: 220px;
     }
     
     .header-overlay h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         letter-spacing: 1px;
     }
     
@@ -322,64 +285,12 @@ footer a:hover {
     
     fieldset {
         grid-template-columns: 1fr;
-        margin: 30px 40px 25px 40px;
+        margin: 30px 35px 25px 35px;
         gap: 20px;
     }
     
     fieldset label:first-child {
         grid-column: 1;
-    }
-    
-    label {
-        font-size: 1rem;
-    }
-    
-    input[type="date"],
-    input[type="number"],
-    select {
-        padding: 12px 14px;
-        font-size: 0.95rem;
-    }
-    
-    button[type="submit"] {
-        max-width: 350px;
-        margin: 0 auto 35px auto;
-        padding: 16px 30px;
-        font-size: 1.05rem;
-    }
-    
-    .thank-you-card {
-        padding: 40px 30px;
-    }
-    
-    .thank-you-card h1 {
-        font-size: 2rem;
-    }
-    
-    .thank-you-card p {
-        font-size: 1rem;
-    }
-    
-    .thank-you-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .vacation-header {
-        height: 200px;
-    }
-    
-    .header-overlay h1 {
-        font-size: 1.8rem;
-        padding: 20px;
-    }
-    
-    fieldset {
-        gap: 18px;
-        margin: 25px 30px 20px 30px;
     }
     
     label {
@@ -394,9 +305,61 @@ footer a:hover {
     }
     
     button[type="submit"] {
-        max-width: 280px;
+        max-width: 300px;
         margin: 0 auto 30px auto;
-        padding: 14px 25px;
+        padding: 14px 30px;
         font-size: 1rem;
+    }
+    
+    .thank-you-card {
+        padding: 40px 30px;
+    }
+    
+    .thank-you-card h1 {
+        font-size: 1.8rem;
+    }
+    
+    .thank-you-card p {
+        font-size: 1rem;
+    }
+    
+    .thank-you-icon {
+        width: 75px;
+        height: 75px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vacation-header {
+        height: 180px;
+    }
+    
+    .header-overlay h1 {
+        font-size: 1.6rem;
+        padding: 15px;
+    }
+    
+    fieldset {
+        gap: 18px;
+        margin: 25px 30px 20px 30px;
+    }
+    
+    label {
+        font-size: 0.9rem;
+    }
+    
+    input[type="date"],
+    input[type="number"],
+    select {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+    
+    button[type="submit"] {
+        max-width: 260px;
+        margin: 0 auto 25px auto;
+        padding: 13px 25px;
+        font-size: 0.95rem;
     }
 }
