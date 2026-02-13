@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Booker</title>
-    <link rel="stylesheet"href="/styles/my-styles.css">
-    <script rel="js" href="/js/main.js"></script>
+    <link rel="icon" href="/images/travel-favicon.avif">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/main.js"></script>
 </head>
 <body>
-    <h1>Book Your Dream Vacation</h1>
+    <main>
         <form id="find-my-vacation-form" action="/submit-find" method="post">
+            <!-- Header Section with Banner Image - INSIDE the form -->
+            <header class="vacation-header">
+                <img src="/images/header-section-banner.jpg" alt="Vacation destination" class="banner-image">
+                <div class="header-overlay">
+                    <h1>Book Your Dream Vacation</h1>
+                </div>
+            </header>
 
-            <!--Create appointment info-->
+            <!--Create Travel Destination-->
             <fieldset> 
                 <label for="destination">Destination
                     <span class="error-message" id="destination-error"></span>
@@ -22,21 +30,32 @@
                         <option value="tokyo">Tokyo, Japan</option>
                         <option value="maldives">Maldives</option>
                         <option value="new-york-city">New York City, USA</option>
-                </select>   
+                    </select>   
                 </label>
+                
                 <label for="departure-date">Departure Date
                     <span class="error-message" id="date-error"></span>
+                    <input id="departure-date" type="date" name="departure-date">
                 </label>
-                <input id="departure-date" type="date" name="departure-date">
+                
                 <label for="number-of-travelers">Number of Travelers
                     <span class="error-message" id="number-of-error"></span>
+                    <input id="number-of-travelers" type="number" name="number-of-travelers">
                 </label>
-                <input id="number-of" type="number input" name="number-of">
             </fieldset>
 
             <!--Submit Button-->
             <button type="submit" id="submit-button">Find My Vacation</button>
-            
         </form>
+    </main>
+
+    <footer>
+        <p>
+            GitHub Repository: 
+            <a href="https://github.com/pdunmire-pcd/vacation-booking-form.git" target="_blank" rel="noopener noreferrer">
+                https://github.com/pdunmire-pcd/vacation-booking-form.git
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
