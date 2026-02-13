@@ -339,3 +339,93 @@ footer a:hover {
         font-size: 1rem;
     }
 }
+
+/* ===== THANK YOU PAGE STYLES ===== */
+.thank-you-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.thank-you-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    padding: 60px 80px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+.thank-you-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.thank-you-card h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.thank-you-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.back-home-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.back-home-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.6);
+}
+
+.back-home-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .thank-you-card {
+        padding: 40px 30px;
+    }
+    
+    .thank-you-card h1 {
+        font-size: 2rem;
+    }
+    
+    .thank-you-card p {
+        font-size: 1rem;
+    }
+    
+    .thank-you-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+    }
+}

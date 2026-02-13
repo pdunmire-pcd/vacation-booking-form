@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         }
         
-        // Validate Departure Date (optional - can be added if needed)
+        // Validate Departure Date
         if (departureDateInput.value.trim() === '') {
             showError(dateError, 'Please select a departure date');
             isValid = false;
@@ -40,10 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // If all validations pass, submit the form
         if (isValid) {
-            // Form is valid - you can submit it here
-            alert('Form is valid! Ready to submit.');
-            // Uncomment the line below to actually submit the form
-            // form.submit();
+            // Form is valid - submit to server
+            form.submit();
         }
     });
     
