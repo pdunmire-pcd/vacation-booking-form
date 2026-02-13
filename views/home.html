@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Booker</title>
-    <
+    <link rel="stylesheet"href="/styles/my-styles.css">
+    <script rel="js" href="/js/main.js"></script>
 </head>
 <body>
-    
+    <h1>Book Your Dream Vacation</h1>
+        <form id="find-my-vacation-form" action="/submit-find" method="post">
+
+            <!--Create appointment info-->
+            <fieldset> 
+                <label for="destination">Destination
+                    <span class="error-message" id="destination-error"></span>
+                    <select name="destination" id="destination">
+                        <option value="none">Choose a destination...</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="new-york-city">New York City, USA</option>
+                </select>   
+                </label>
+                <label for="departure-date">Departure Date
+                    <span class="error-message" id="date-error"></span>
+                </label>
+                <input id="departure-date" type="date" name="departure-date">
+                <label for="number-of-travelers">Number of Travelers
+                    <span class="error-message" id="number-of-error"></span>
+                </label>
+                <input id="number-of" type="number input" name="number-of">
+            </fieldset>
+
+            <!--Submit Button-->
+            <button type="submit" id="submit-button">Find My Vacation</button>
+            
+        </form>
 </body>
 </html>
